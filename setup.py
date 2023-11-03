@@ -7,7 +7,7 @@ def get_requirements(file_path:str)->List[str]:
     '''
     this function will retutn the list of requirments
     '''
-    requiremnets =[]
+    requirements =[]
     with open(file_path) as file_obj:
         requirements = file_obj.readlines()
         requirements = [req.replace("\n","") for req in requirements]
